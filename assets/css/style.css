@@ -1,0 +1,190 @@
+/* general */
+* {
+    box-sizing: border-box;
+  }
+body {
+    background: url("../images/spiration-light.png");
+    font-family: Helvetica;
+    color: #777777;
+    font-size: 16px;
+}
+
+/* Header and Connect */
+h2, h3 {
+    font-size: 25px;
+    font-family: Times;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+h3 {
+    font-size: 20px;
+}
+
+/* Header */
+header {
+    font-family: Times;
+    border: 1px solid #cccccc;
+    width 100%;
+    height: 75px;
+    background: #ffffff;
+    margin-left: 0;
+}
+h1 {
+    font-size:30px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #4aaaa5;
+    margin-left: 10%;
+    float:left;
+    padding: 22px;
+   }
+
+/* Header-navigation */
+nav {
+    background: #ffffff;
+    font-size: 18px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 30px;
+}
+span {
+    padding:0 20px;
+}
+#about {
+    border-right: 2px solid #777777;
+}
+#portfolio {
+    border-right: 2px solid #777777;
+}
+a {
+    text-decoration: none;
+    color: #777777;
+}
+a:hover {
+    color: #4aaaa5;
+}
+
+/* Connect with Me*/
+.connect {
+    float: right;
+    background: #ffffff;
+    margin-right: 2%;
+    padding: 2%;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+.connect img {
+    margin: 0 5px;
+}
+
+.connect hr {
+    margin: 10px 0;
+}
+/* content general*/
+.content {
+    background: #ffffff; 
+    margin-left: 10%;
+    margin-right: 3%; 
+    margin-bottom: 3%;
+    padding: 3%;
+    float: left;
+    width:60%;
+    border: 1px solid #dddddd;
+
+}
+hr {
+    color: #777777;
+    background-color: #777777;
+    height: 3px;
+    margin: 3% 0     
+}
+
+/* About Me */
+.me {
+    margin-right: 10px;
+    float: left;
+}
+p {
+    line-height: 1.5;
+}
+
+/* Contact*/
+form {
+    font-size: 20px;
+    color: #777777;
+}
+.info {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #777777;
+}
+.message {
+    height: 200px;
+}
+.submit {
+    background-color:#4aaaa5;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.submit:hover {
+    color: #777777;
+}
+
+/* Portfolio */
+.portfolio-image {
+    float: left;
+    position: relative;
+    padding:72px;
+}
+.description {
+    position:absolute;
+    text-align:center;
+    top: 180px;
+    width: 200px;
+    padding: 15px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    margin-top: -50px;
+    background: #666666;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #777777;
+    vertical-align: middle;
+}
+h6 {
+    padding-top: 19px;
+}
+
+
+/* TESTING */
+.portfolio-image {
+    float: left;
+    position: relative;
+    padding:72px;
+}
+.description {
+    position:absolute;
+    text-align:center;
+    top: 120px;
+    width: 200px;
+    padding: 15px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.portfolio-section {
+    position: relative;
+}
+
