@@ -9,6 +9,7 @@ body {
     font-size: 16px;
 }
 
+
 /* Header and Connect */
 h2, h3 {
     font-size: 25px;
@@ -80,6 +81,7 @@ a:hover {
 .connect hr {
     margin: 10px 0;
 }
+
 /* content general*/
 .content {
     background: #ffffff; 
@@ -108,6 +110,30 @@ p {
     line-height: 1.5;
 }
 
+/* Portfolio */
+table {
+    width: 100%;
+}
+tr {
+    text-align: center;  
+}
+.portfolio-image {
+    position: relative;
+    margin: 5%;
+}
+h4 {
+    position:absolute;
+    text-align:center;
+    margin: 0;
+    top: 50%;
+    left: 54px;
+    width: 200px;
+    padding: 16px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+}
+
 /* Contact*/
 form {
     font-size: 20px;
@@ -118,9 +144,11 @@ form {
     height: 30px;
     font-size: 16px;
     color: #777777;
+    border: 1px solid #777777;
 }
 .message {
     height: 200px;
+    border: 1px solid #777777;
 }
 .submit {
     background-color:#4aaaa5;
@@ -133,23 +161,6 @@ form {
     color: #777777;
 }
 
-/* Portfolio */
-.portfolio-image {
-    float: left;
-    position: relative;
-    padding:72px;
-}
-.description {
-    position:absolute;
-    text-align:center;
-    top: 180px;
-    width: 200px;
-    padding: 15px;
-    background: #4aaaa5;
-    color: #ffffff;
-    font-size: 18px;
-}
-
 /* Footer */
 footer {
     clear: both;
@@ -159,32 +170,130 @@ footer {
     height: 50px;
     text-align: center;
     font-size: 12px;
-    color: #777777;
+    color: #9c9696;
     vertical-align: middle;
+    border-top: 8px solid #4aaaa5;
 }
 h6 {
     padding-top: 19px;
 }
 
+/* Media Queries */
+/* 980px */
+@media only screen and (max-width: 980px) {
+    /* Index.html */
+    p {
+        clear: both;
+    }
 
-/* TESTING */
-.portfolio-image {
-    float: left;
-    position: relative;
-    padding:72px;
-}
-.description {
-    position:absolute;
-    text-align:center;
-    top: 120px;
-    width: 200px;
-    padding: 15px;
-    background: #4aaaa5;
-    color: #ffffff;
-    font-size: 18px;
+    /* NEED TO MAKE IMAGE less giant */
+    .me {
+        clear: both;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    
+    /* portfolio.html */
+    .content {
+        width: 50%;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+    h4 {
+        left: 93px;
+    }
 }
 
-.portfolio-section {
-    position: relative;
+
+/* 768px */
+@media only screen and (max-width: 768px) {
+    /* Index.html */
+
+    /* THIS ISN'T FLOATING LEFT */
+    p {
+        float: left;
+    }
+    .me {
+        float: left;
+        width: 50%;
+    }
+
+
+    /* Portfolio.html */
+    .content {
+        width: 60%;
+    }
+    td {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    h4 {
+        left: 45px;
+    }
+
+
+     /* NEED TO MAKE IMAGE BIGGER */
+     /* for all pages */
+     .content {
+        width: 90%;
+        margin: 0 5%;
+     }
+     .connect {
+        clear: both;
+        width: 90%;
+        text-align: left;
+        margin: 5%;
+     }
+     h1 {
+         margin-left: 5%;
+     }
 }
 
+
+/* 640px */
+@media only screen and (max-width: 640px) {
+    /* Index.html */
+     p {
+        clear: both;
+     }
+     .me {
+        width: 100%
+    }
+
+    /* portfolio.html */
+    .content {
+        width: 90%;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+    h4 {
+        left: 141px;
+    }
+
+    /* for all pages */
+
+     .content {
+        margin: 0 5%;
+     }
+     h1 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+     }
+     nav {
+         display: block;
+         width: 100%;
+         height: 50%;
+         margin: 0 0 3%;
+         padding-top: 10px;
+         text-align: center;
+     }
+     span {
+        padding: 0 80px;
+     }
+}
