@@ -217,7 +217,7 @@ h6 {
         height: auto;
     }
     .image-holder {
-        margin:20px;
+        margin: 30px, 0;
     }
 }
 
@@ -284,9 +284,6 @@ h6 {
     td {
         display: block;
         width: 100%;
-    }
-    h4 {
-        left: 141px;
     }
 
     /* for all pages */
