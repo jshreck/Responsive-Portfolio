@@ -21,6 +21,7 @@ h3 {
     font-size: 20px;
 }
 
+
 /* Header */
 header {
     font-family: Times;
@@ -39,6 +40,7 @@ h1 {
     float:left;
     padding: 22px;
    }
+
 
 /* Header-navigation */
 nav {
@@ -65,22 +67,6 @@ a:hover {
     color: #4aaaa5;
 }
 
-/* Connect with Me*/
-.connect {
-    float: right;
-    background: #ffffff;
-    margin-right: 2%;
-    padding: 2%;
-    text-align: center;
-    border: 1px solid #dddddd;
-}
-.connect img {
-    margin: 0 5px;
-}
-
-.connect hr {
-    margin: 10px 0;
-}
 
 /* content general*/
 .content {
@@ -101,6 +87,7 @@ hr {
     margin: 3% 0     
 }
 
+
 /* About Me */
 .me {
     margin-right: 10px;
@@ -110,29 +97,6 @@ p {
     line-height: 1.5;
 }
 
-/* Portfolio */
-table {
-    width: 100%;
-}
-tr {
-    text-align: center;  
-}
-.portfolio-image {
-    position: relative;
-    margin: 5%;
-}
-h4 {
-    position:absolute;
-    text-align:center;
-    margin: 0;
-    top: 50%;
-    left: 54px;
-    width: 200px;
-    padding: 16px;
-    background: #4aaaa5;
-    color: #ffffff;
-    font-size: 18px;
-}
 
 /* Contact*/
 form {
@@ -161,6 +125,49 @@ form {
     color: #777777;
 }
 
+
+/* Portfolio */
+table {
+    width: 100%;
+}
+tr {
+    text-align: center;  
+}
+.image-holder {
+    position: relative;
+    margin: 5%;
+}
+h4 {
+    position:absolute;
+    text-align:center;
+    margin: 0;
+    top: 60%;
+    left: 54px;
+    width: 200px;
+    padding: 16px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Connect with Me*/
+.connect {
+    float: right;
+    background: #ffffff;
+    margin-right: 8%;
+    padding: 2%;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+.connect img {
+    margin: 0 5px;
+}
+
+.connect hr {
+    margin: 10px 0;
+}
+
+
 /* Footer */
 footer {
     clear: both;
@@ -178,19 +185,17 @@ h6 {
     padding-top: 19px;
 }
 
+
 /* Media Queries */
 /* 980px */
 @media only screen and (max-width: 980px) {
     /* Index.html */
     p {
-        clear: both;
+        float: none;
     }
-
-    /* NEED TO MAKE IMAGE less giant */
     .me {
-        clear: both;
         width: 100%;
-        margin-bottom: 3%;
+        margin-bottom: 15px;
     }
     
     /* portfolio.html */
@@ -202,7 +207,17 @@ h6 {
         width: 100%;
     }
     h4 {
-        left: 93px;
+        width: 100%;
+        left: 0px;
+        top: 70%;
+        padding: 20px;
+    }
+    .portfolio-image {
+        width: 100%;
+        height: auto;
+    }
+    .image-holder {
+        margin:20px;
     }
 }
 
@@ -210,32 +225,34 @@ h6 {
 /* 768px */
 @media only screen and (max-width: 768px) {
     /* Index.html */
-
-    /* THIS ISN'T FLOATING LEFT */
-    p {
-        float: left;
-    }
     .me {
-        float: left;
         width: 50%;
+        margin-right: 20px;
+       
     }
-
 
     /* Portfolio.html */
+    /* NOT WORKING CORRECTLY */
     .content {
         width: 60%;
     }
+    tr {
+        width: 100%;
+    }
     td {
-        display: inline-block;
         width: 50%;
+        padding: 0;
+        display: table-cell;
     }
-    
+
+    /* .portfolio-image {
+        width: 50%;
+        height: auto;
+    } 
     h4 {
-        left: 45px;
-    }
+        width: 50%;
+    } */
 
-
-     /* NEED TO MAKE IMAGE BIGGER */
      /* for all pages */
      .content {
         width: 90%;
@@ -256,9 +273,6 @@ h6 {
 /* 640px */
 @media only screen and (max-width: 640px) {
     /* Index.html */
-     p {
-        clear: both;
-     }
      .me {
         width: 100%
     }
@@ -276,7 +290,6 @@ h6 {
     }
 
     /* for all pages */
-
      .content {
         margin: 0 5%;
      }
@@ -294,6 +307,7 @@ h6 {
          text-align: center;
      }
      span {
-        padding: 0 80px;
+        padding: 0 70px;
+        overflow: hidden;
      }
 }
