@@ -231,7 +231,6 @@ h6 {
     }
 
     /* Portfolio.html */
-    /* NOT WORKING CORRECTLY */
     .content {
         width: 60%;
     }
@@ -243,14 +242,6 @@ h6 {
         padding: 0;
         display: table-cell;
     }
-
-    /* .portfolio-image {
-        width: 50%;
-        height: auto;
-    } 
-    h4 {
-        width: 50%;
-    } */
 
      /* for all pages */
      .content {
